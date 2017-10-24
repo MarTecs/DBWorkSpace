@@ -20,3 +20,9 @@ DROP COLUMN order_id;
 ALTER TABLE 表名
 ADD CONSTRAINT fk_现在这个名_外键所在的那张主键表
 FOREIGN KEY (列名) REFERENCES 表名(列名);
+
+## 引擎类型
+1. InnoDB是一个可靠的事务处理引擎，不支持全文本搜索
+2. MEMORY 在功能等同于MyISAM,但由于数据存储在内存中(不是硬盘中)
+速度很快，特别适合于临时表
+3. MyISAM表是一个性能极高的引擎，支持全文本搜索，但是不支持事务处理
