@@ -8,6 +8,10 @@ RENAME TABLE customers TO customers2,
 
 ## 更新表
 
-1. 向已经存在的表里面新增加一列
+1. 向已经存在的表里面新增加一个字段
 ALTER TABLE orders
 ADD COLUMN order_id INT(10);
+
+2. 向已经存在表里面删除一个字段
+ALTER TABLE orders
+DROP COLUMN order_id;
