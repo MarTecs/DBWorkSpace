@@ -9,5 +9,5 @@ RENAME TABLE customers TO customers2,
 ## 更新表
 
 1. 向已经存在的表里面新增加一列
-ALTER TABLE vendors
-ADD COLUMN vend_phone CHAR(20);
+ALTER TABLE orders
+ADD COLUMN order_id INT(10);
