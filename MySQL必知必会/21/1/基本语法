@@ -15,3 +15,8 @@ ADD COLUMN order_id INT(10);
 2. 向已经存在表里面删除一个字段
 ALTER TABLE orders
 DROP COLUMN order_id;
+
+3. 定义外键约束
+ALTER TABLE 表名
+ADD CONSTRAINT fk_现在这个名_外键所在的那张主键表
+FOREIGN KEY (列名) REFERENCES 表名(列名);
