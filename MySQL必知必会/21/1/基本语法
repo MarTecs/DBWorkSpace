@@ -1,1 +1,6 @@
 RENAME TABLE customers TO customers2;
+
+
+-- 使用一条SQL语句对多个表进行改名和操作
+RENAME TABLE customers TO customers2,
+              orders TO orders2;
