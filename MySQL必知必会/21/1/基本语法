@@ -4,3 +4,10 @@ RENAME TABLE customers TO customers2;
 -- 使用一条SQL语句对多个表进行改名和操作
 RENAME TABLE customers TO customers2,
               orders TO orders2;
+
+
+## 更新表
+
+1. 向已经存在的表里面新增加一列
+ALTER TABLE vendors
+ADD COLUMN vend_phone CHAR(20);
